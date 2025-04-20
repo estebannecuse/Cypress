@@ -6,7 +6,8 @@ const {
 const {
   preprendTransformerToOptions,
 } = require("@badeball/cypress-cucumber-preprocessor/browserify");
-
+const excelToJson = require('convert-excel-to-json');
+const fs = require('fs');
 
 async function setupNodeEvents(on, config) {
   require('cypress-mochawesome-reporter/plugin')(on);
@@ -18,9 +19,21 @@ async function setupNodeEvents(on, config) {
     browserify(preprendTransformerToOptions(config, browserify.defaultOptions)),
   );
 
+  
   // Make sure to return the config object as it might have been modified by the plugin.
+  on('task',{
+    excelToJsonConverter(filePath){
+      const result = excelToJson({
+        source: fs.readFileSync(filePath)
+      });
+        return result;
+    }
+  })
+  
   return config;
 }
+
+
 
 module.exports = defineConfig({
   projectId: "4wwx2f",

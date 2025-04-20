@@ -1,7 +1,6 @@
 /// <reference types="cypress"/>
 const neatCSV = require('neat-csv')
-const excelToJson = require('convert-excel-to-json');
-const fs = require('fs');
+
 describe('sesion test',()=>{
     it('sesion test',()=>{
         cy.LoginApi().then(function(){
@@ -28,10 +27,9 @@ describe('sesion test',()=>{
 
        
         const filePath = Cypress.config("fileServerFolder")+"/cypress/Primer Proyecto/cypress/downloads/order-invoice-ashika.xlsx"
-        const result = excelToJson({
-        source: fs.readFileSync(filePath) // fs.readFileSync return a Buffer
-
-    });
-    console.log(result)
+       cy.task('excelToJsonConverter',filePath).then(function(result){
+        cy.log(result.data[1].A);
+        expect(result.data[1].B).to.equal();
+       })
     })
 })
