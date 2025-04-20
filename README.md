@@ -38,30 +38,30 @@
   7.1- Test execution videos & screenshots
   <br>
 
-9-Mocking Http request/responses with Cypress
+8-Mocking Http request/responses with Cypress
 <br>
-  9.1-Mock http response for generation stub data to test edge scenarios 
+  8.1-Mock http response for generation stub data to test edge scenarios 
   <br>
-  9.2-Integration testing with front end and back end response validation assertions
+  8.2-Integration testing with front end and back end response validation assertions
   <br>
-  9.3- Interception http request details to test security scenarios 
+  8.3- Interception http request details to test security scenarios 
   <br>
 
-10-Session Token & Local Sorage Data saving with cypress & CSV Parsers 
+9-Session Token & Local Sorage Data saving with cypress & CSV Parsers 
 <br>
-  10.1- How to save the login tokens in browser local storage using cypress.
+  9.1- How to save the login tokens in browser local storage using cypress.
   <br>
 
-11-Cypress DB Integration Testing 
+10-Cypress DB Integration Testing 
 <br>
-  11.1-Setting up SQL Server with Azure for Cypress Testing
+  10.1-Setting up SQL Server with Azure for Cypress Testing
   <br>
 
-12-Cypress Tasks for Node excecution & Excel File system acces. 
+11-Cypress Tasks for Node excecution & Excel File system acces. 
 <br>
-  12.1-how to read, verify and modify excel files with plugin
+  11.1-how to read, verify and modify excel files with plugin
   <br>
-  12.2 Upload download with cypress including excel manipulaiton. 
+  11.2 Upload download with cypress including excel manipulaiton. 
   
 
 
