@@ -1,12 +1,17 @@
 # Cypress
 # Test Content
 1-Verify Check Boxes , Dynamic Dropdowns with each iteration.
+<br>
 1.1 -Visible and invisible elements 
-
+<br>
 2-Auto handle
+<br>
   2.1-Alerts
+  <br>
   2.2- Handling Child tab Cypress & Jquery
+  <br>
   2.3-Handling Tables 
+  <br>
 
 3-Automate Frames, Child windows and calendars
 
