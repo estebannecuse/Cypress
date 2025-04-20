@@ -38,11 +38,6 @@
   7.1- Test execution videos & screenshots
   <br>
 
-8-Cypress & BDD integration 
-<br>
-  8.1-cucumber
-  <br>
-
 9-Mocking Http request/responses with Cypress
 <br>
   9.1-Mock http response for generation stub data to test edge scenarios 
